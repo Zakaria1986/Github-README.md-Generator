@@ -10,7 +10,12 @@ const promtQuestions = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'Please enter the title of my project?'
+            message: 'Please enter the title of the project?'
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Please enter the description of the project?'
         },
         {
             type: 'input',
@@ -36,6 +41,16 @@ const promtQuestions = () => {
         },
         {
             type: 'input',
+            name: 'tests',
+            message: 'Testing instruction?'
+        },
+        {
+            type: 'input',
+            name: 'furtherQA',
+            message: 'Further questions guide?'
+        },
+        {
+            type: 'input',
             name: 'gitProfileName',
             message: 'Please enter your git profile name?'
         },
@@ -49,16 +64,6 @@ const promtQuestions = () => {
                 console.log('Please enter valid email address');
                 return validatedEmail;
             }
-        },
-        {
-            type: 'input',
-            name: 'tests',
-            message: 'Testing instruction?'
-        },
-        {
-            type: 'input',
-            name: 'furtherQA',
-            message: 'Further questions guide?'
         }
     ];
 }
@@ -68,7 +73,7 @@ const tableContent = (arr) => {
 
     // let promtQuestsTableCont = promtQuestions();
 
-    let cont = `## Table of Contents\n<br><br>`
+    let cont = `## Table of Contents\n<br>`
     for (var i = 0; i < arr.length; i++) {
         cont += `\t\t${i + 1}. [${arr[i].name}](#${arr[i].name}-${i})\n<br>`;
     }
@@ -98,6 +103,9 @@ async function inquirerFunc() {
                     title: answers.title,
                 },
                 {
+                    description: answers.description,
+                },
+                {
                     instalation: answers.instalation,
                 },
                 {
@@ -110,13 +118,13 @@ async function inquirerFunc() {
                     contributor: answers.contributor,
                 },
                 {
-                    gitProfileName: answers.gitProfileName,
-                },
-                {
                     tests: answers.tests,
                 },
                 {
                     furtherQA: answers.furtherQA,
+                },
+                {
+                    gitProfileName: answers.gitProfileName,
                 },
                 {
                     enterEmail: answers.enterEmail,

@@ -1,39 +1,40 @@
 
   
-  # Proejct presensation testing  <a name="title-0"></a>
+  # Automated README Generator app.  <a name="title-0"></a>
+  ## Description <a name="description-1"></a>
+  undefined
   
   ## Table of Contents
-<br><br>		1. [title](#title-0)
-<br>		2. [instalation](#instalation-1)
-<br>		3. [usage](#usage-2)
-<br>		4. [license](#license-3)
-<br>		5. [contributor](#contributor-4)
-<br>		6. [gitProfileName](#gitProfileName-5)
-<br>		7. [enterEmail](#enterEmail-6)
-<br>		8. [tests](#tests-7)
-<br>		9. [furtherQA](#furtherQA-8)
+<br>		1. [title](#title-0)
+<br>		2. [description](#description-1)
+<br>		3. [instalation](#instalation-2)
+<br>		4. [usage](#usage-3)
+<br>		5. [license](#license-4)
+<br>		6. [contributor](#contributor-5)
+<br>		7. [tests](#tests-6)
+<br>		8. [furtherQA](#furtherQA-7)
+<br>		9. [gitProfileName](#gitProfileName-8)
+<br>		10. [enterEmail](#enterEmail-9)
 <br>
    
-   ## Instalation <a name="instalation-1"></a>
-      project test
+   ## Iescription <a name="instalation-2"></a>
+      To run this app, make sure you have node installed on your machine then go to you project root folder then run: 1. npm init, 2. Install inquirer, fs, and axios. 
 
-   ## Usage<a name="usage-2"></a>
-      project test
+   ## Unstalation<a name="usage-3"></a>
+      When the app is run, you get series of questions related tot he project. You fill the section which then gets processed and then the application generates readme.md file which then can be pushed to your live git repo. 
 
-   ## License <a name="license-3"></a>
-      [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+   ## License <a name="license-4"></a>
+      [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
 
-   ## Contributor <a name="contributor-4"></a>
-      testing 
+   ## Contributor <a name="contributor-5"></a>
+      If you would like to contribute to this project, please get in touch on  [Get in touch](mailto:Zakaria.khan@zaksweb.co.uk
 
-      zaks@hotmail.com
+   ## Tests <a name="tests-6"></a>
+      If you would like to test and contribute to this app, please download a copy of the repo and let me know the bug or anythings. Thank you!
 
-   ## GitProfileName <a name="gitProfileName-5"></a>
-      zaksweb@hotmail.com
+   ## FurtherQA <a name="frutherQA-7"></a>
+      If you have any further question, please get in touch on 
 
-   ## EnterEmail <a name="tests-7"></a>
-      hotmail.com
-
-   ## Tests <a name="frutherQA-8"></a>
-      lkdsf
+   ## GitProfileName <a name="gitProfileName-8"></a>
+      Zakaria2012
    
