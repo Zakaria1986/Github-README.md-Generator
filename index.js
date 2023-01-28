@@ -70,7 +70,7 @@ const tableContent = (arr) => {
 
     let cont = `##able of Contents\n`
     for (var i = 0; i < arr.length; i++) {
-        cont += `\t\t${i + 1}. [${arr[i].name}](#${arr[i].name}-${i})\n`;
+        cont += `\t\t${i + 1}. [${arr[i].name}](#${arr[i].name}-${i})\n<br>`;
     }
     return cont;
 }
