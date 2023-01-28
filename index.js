@@ -5,67 +5,72 @@ const axios = require("axios");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-const promtQuestions = [
-    {
-        type: 'input',
-        name: 'title',
-        message: 'Please enter the title of my project?'
-    },
-    {
-        type: 'input',
-        name: 'instalation',
-        message: 'Please enter installation instruction?'
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'Please enter usage inscturction?'
-    },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'Please select the right License from the list?',
-        choices: ['MIT', 'ODbL', 'PDDL', 'WTFPL', 'Microsoft Public License',],
-        default: 'MIT'
-    },
-    {
-        type: 'input',
-        name: 'contributor',
-        message: 'Contributor intructions?'
-    },
-    {
-        type: 'input',
-        name: 'gitProfileName',
-        message: 'Please enter your git profile name?'
-    },
-    {
-        type: 'input',
-        name: 'enterEmail',
-        message: 'Please enter your email?',
-        validate: function (email) {
-            // Regex mail check (return true if valid mail)
-            let validatedEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
-            console.log('Please enter valid email address');
-            return validatedEmail;
+const promtQuestions = () => {
+    return [
+        {
+            type: 'input',
+            name: 'title',
+            message: 'Please enter the title of my project?'
+        },
+        {
+            type: 'input',
+            name: 'instalation',
+            message: 'Please enter installation instruction?'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Please enter usage inscturction?'
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Please select the right License from the list?',
+            choices: ['MIT', 'ODbL', 'PDDL', 'WTFPL', 'Microsoft Public License',],
+            default: 'MIT'
+        },
+        {
+            type: 'input',
+            name: 'contributor',
+            message: 'Contributor intructions?'
+        },
+        {
+            type: 'input',
+            name: 'gitProfileName',
+            message: 'Please enter your git profile name?'
+        },
+        {
+            type: 'input',
+            name: 'enterEmail',
+            message: 'Please enter your email?',
+            validate: function (email) {
+                // Regex mail check (return true if valid mail)
+                let validatedEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+                console.log('Please enter valid email address');
+                return validatedEmail;
+            }
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Testing instruction?'
+        },
+        {
+            type: 'input',
+            name: 'furtherQA',
+            message: 'Further questions guide?'
         }
-    },
-    {
-        type: 'input',
-        name: 'tests',
-        message: 'Testing instruction?'
-    },
-    {
-        type: 'input',
-        name: 'furtherQA',
-        message: 'Further questions guide?'
-    }
-];
+    ];
+}
 
-// Table contents 
-var tableContent = function () {
+//  * When a user clicks on the links in the **Table of Contents**  then they are taken to the corresponding section of the README
+const tableContent = (arr) => {
+
+    // let promtQuestsTableCont = promtQuestions();
+
     let cont = `##able of Contents\n`
-    for (var i = 0; i < promtQuestions.length; i++) {
-        cont += `${i + 1}. [${promtQuestions[i].message}](#${promtQuestions[i].name}-${i})\n`
+    for (var i = 0; i < arr.length; i++) {
+        cont += `\t\t${i + 1}. [${arr[i].name}](#${arr[i].name}-${i})\n`;
     }
     return cont;
 }
@@ -73,19 +78,25 @@ var tableContent = function () {
 // const contOutPut = tableContent();
 // console.log(contOutPut);
 
-
-
 // The promt functon
 async function inquirerFunc() {
-    inquirer
-        .prompt(promtQuestions)
+
+
+    const promtQuests = await promtQuestions();
+    const tableConts = await tableContent(promtQuests);
+
+
+
+    return inquirer
+        .prompt(promtQuests)
         .then(answers => {
 
             var promtAnswers = []
 
-            promtAnswers.push({
-                title: answers.title,
-            },
+            promtAnswers.push(
+                {
+                    title: answers.title,
+                },
                 {
                     instalation: answers.instalation,
                 },
@@ -102,24 +113,25 @@ async function inquirerFunc() {
                     gitProfileName: answers.gitProfileName,
                 },
                 {
-                    enterEmail: answers.enterEmail,
-                },
-                {
                     tests: answers.tests,
                 },
                 {
                     furtherQA: answers.furtherQA,
-                });
+                },
+                {
+                    enterEmail: answers.enterEmail,
+                }
+            );
 
-            createReadMeFile(promtAnswers)
+            createReadMeFile(promtAnswers, promtQuests, tableConts)
         });
 }
 
 
-function createReadMeFile(data) {
+async function createReadMeFile(data, promtQuest, tableCont) {
 
 
-    let genrateFucReturn = generateMarkdown(data, promtQuestions, tableContent);
+    let genrateFucReturn = generateMarkdown(data, promtQuest, tableCont);
 
     console.log(genrateFucReturn);
 
@@ -147,14 +159,12 @@ function createReadMeFile(data) {
 //  * When a user enters their email address then this is added to the section of the README entitled Questions,
 //    with instructions on how to reach them with additional questions
 
-//  * When a user clicks on the links in the **Table of Contents** 
-//  then they are taken to the corresponding section of the README
 
-// function to write README file
+
 
 // function to initialize program
-function init() {
-    inquirerFunc();
+async function init() {
+    await inquirerFunc();
 }
 // function call to initialize program
 init();

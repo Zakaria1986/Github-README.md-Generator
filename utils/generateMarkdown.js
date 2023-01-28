@@ -25,7 +25,7 @@ function generateMarkdown(data, questions, tableCont) {
   
   # ${data[0].title.charAt(0).toUpperCase() + data[0].title.slice(1)}  <a name="title-0"></a>
   
-  ${tableCont()}
+  ${tableCont}
    
    ## ${questions[1].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="instalation-1"></a>
       ${data[1].instalation}
@@ -39,15 +39,15 @@ function generateMarkdown(data, questions, tableCont) {
    ## ${questions[4].name.charAt(0).toUpperCase() + questions[4].name.slice(1)} <a name="contributor-4"></a>
       ${data[4].contributor}
 
-      \n please get in touch: ${data[6].enterEmail}
+      ${data[8].enterEmail}
 
-   ## ${questions[5].name.charAt(0).toUpperCase() + questions[4].name.slice(1)} <a name="contributor-5"></a>
+   ## ${questions[5].name.charAt(0).toUpperCase() + questions[5].name.slice(1)} <a name="gitProfileName-5"></a>
       ${data[5].gitProfileName}
 
-   ## ${questions[6].name.charAt(0).toUpperCase() + questions[5].name.slice(1)} <a name="tests-7"></a>
+   ## ${questions[6].name.charAt(0).toUpperCase() + questions[6].name.slice(1)} <a name="tests-7"></a>
       ${data[6].tests}
 
-   ## ${questions[7].name.charAt(0).toUpperCase() + questions[6].name.slice(1)} <a name="frutherQA-8"></a>
+   ## ${questions[7].name.charAt(0).toUpperCase() + questions[7].name.slice(1)} <a name="frutherQA-8"></a>
       ${data[7].furtherQA}
    `
 
