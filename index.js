@@ -26,7 +26,7 @@ const promtQuestions = () => {
             type: 'list',
             name: 'license',
             message: 'Please select the right License from the list?',
-            choices: ['MIT', 'ODbL', 'PDDL', 'WTFPL', 'Microsoft Public License',],
+            choices: ['MIT', 'ODbL', 'PDDL', 'WTFPL'],
             default: 'MIT'
         },
         {
