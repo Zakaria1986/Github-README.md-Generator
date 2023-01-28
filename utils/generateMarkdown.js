@@ -25,7 +25,7 @@ function generateMarkdown(data, questions, tableCont) {
   
   # ${data[0].title.charAt(0).toUpperCase() + data[0].title.slice(1)}  <a name="title-0"></a>
   ## ${questions[1].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="description-1"></a>
-  ${data[1].instalation}
+    ${data[1].description}
   
   ${tableCont}
    
@@ -48,7 +48,7 @@ function generateMarkdown(data, questions, tableCont) {
       ${data[7].furtherQA}
 
    ## ${questions[8].name.charAt(0).toUpperCase() + questions[8].name.slice(1)} <a name="gitProfileName-8"></a>
-      ${data[8].gitProfileName}
+      [Click to see git repository](https://github.com/]${data[8].gitProfileName})
    `
 
   return readmeContent;

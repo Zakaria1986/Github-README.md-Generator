@@ -47,7 +47,7 @@ const promtQuestions = () => {
         {
             type: 'input',
             name: 'furtherQA',
-            message: 'Further questions guide?'
+            message: 'Any further questions ?'
         },
         {
             type: 'input',
