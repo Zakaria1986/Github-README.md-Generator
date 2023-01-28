@@ -5,7 +5,8 @@
      
 When we developers work on any given project, we sure do spend lot of time working about what to write and how to layout the structure of our readme.md file. Well this app created to ease that struggle and save developer/your precious time. With that in mind, this app take you through series of questions which you fill in the readme.md file gets generated in your root-folder automatically. I hope you find this app useful. See installation guide section to get you started. Good luck! 
 
-    ## Table of Contents
+    
+## Table of Contents
 <br>		1. [title](#title-0)
 <br>		2. [description](#description-1)
 <br>		3. [instalation](#instalation-2)
@@ -20,7 +21,7 @@ When we developers work on any given project, we sure do spend lot of time worki
    
    ##  Instalation <a name="instalation-2"></a>
       
-To run this app, make sure you have node installed on your machine then go to you project root folder then run: 1. npm init, 2. Install inquirer, fs, and axios.  
+To run this app, make sure you have node installed on your machine then go to you project root folder then run: 1. npm init, 2. Install inquirer, fs, and axios.
 
    ##  Usage<a name="usage-3"></a>
       
@@ -32,7 +33,7 @@ When the app is run, you get series of questions related tot he project. You fil
 
    ##  Contributor <a name="contributor-5"></a>
       
-If you would like to contribute to this project, please get in touch on ![email](mailto:Zakaria.khan@zaksweb.co.uk
+If you would like to contribute to this project, please get in touch on [email](mailto:Zakaria.khan@zaksweb.co.uk)
 
    ##  Tests <a name="tests-6"></a>
       
@@ -40,9 +41,9 @@ If you would like to test and contribute to this app, please download a copy of 
 
    ##  FurtherQA <a name="frutherQA-7"></a>
       
-If you have any further question, please get in touch on: ![Get in touch](mailto:Zakaria.khan@zaksweb.co.uk
+If you have any further question, please get in touch on: [email](mailto:Zakaria.khan@zaksweb.co.uk)
 
    ##  GitProfileName <a name="gitProfileName-8"></a>
       
-![Click to see git repository](https://github.com/]Zakaria2012)
+[Click to see git repository](https://github.com/]Zakaria2012)
    
