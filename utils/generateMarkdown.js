@@ -29,10 +29,10 @@ function generateMarkdown(data, questions, tableCont) {
 
     ${tableCont}
    
-   ##  ${questions[2].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="instalation-2"></a>
+   ##  ${questions[2].name.charAt(0).toUpperCase() + questions[2].name.slice(1)} <a name="instalation-2"></a>
       \n${data[2].instalation}
 
-   ##  ${questions[3].name.charAt(0).toUpperCase() + questions[2].name.slice(1)}<a name="usage-3"></a>
+   ##  ${questions[3].name.charAt(0).toUpperCase() + questions[3].name.slice(1)}<a name="usage-3"></a>
       \n${data[3].usage}
 
    ##  ${questions[4].name.charAt(0).toUpperCase() + questions[4].name.slice(1)} <a name="license-4"></a>

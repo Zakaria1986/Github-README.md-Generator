@@ -75,7 +75,7 @@ const tableContent = (arr) => {
 
     let cont = `## Table of Contents\n<br>`
     for (var i = 0; i < arr.length; i++) {
-        cont += `\t\t${i + 1}. [${arr[i].name.charAt(0).toUpperCase() + arr[1].name.slice(1)}](#${arr[i].name}-${i})\n<br>`;
+        cont += `\t\t${i + 1}. [${arr[i].name}](#${arr[i].name}-${i})\n<br>`;
     }
     return cont;
 }
@@ -89,8 +89,6 @@ async function inquirerFunc() {
 
     const promtQuests = await promtQuestions();
     const tableConts = await tableContent(promtQuests);
-
-
 
     return inquirer
         .prompt(promtQuests)
@@ -137,7 +135,6 @@ async function inquirerFunc() {
 
 
 async function createReadMeFile(data, promtQuest, tableCont) {
-
 
     let genrateFucReturn = generateMarkdown(data, promtQuest, tableCont);
 

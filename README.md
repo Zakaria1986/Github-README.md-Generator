@@ -6,16 +6,16 @@
 When we developers work on any given project, we sure do spend lot of time working about what to write and how to layout the structure of our readme.md file. Well this app created to ease that struggle and save developer/your precious time. With that in mind, this app take you through series of questions which you fill in the readme.md file gets generated in your root-folder automatically. I hope you find this app useful. See installation guide section to get you started. Good luck! 
 
     ## Table of Contents
-<br>		1. [Tescription](#title-0)
-<br>		2. [Description](#description-1)
-<br>		3. [Iescription](#instalation-2)
-<br>		4. [Uescription](#usage-3)
-<br>		5. [Lescription](#license-4)
-<br>		6. [Cescription](#contributor-5)
-<br>		7. [Tescription](#tests-6)
-<br>		8. [Fescription](#furtherQA-7)
-<br>		9. [Gescription](#gitProfileName-8)
-<br>		10. [Eescription](#enterEmail-9)
+<br>		1. [title](#title-0)
+<br>		2. [description](#description-1)
+<br>		3. [instalation](#instalation-2)
+<br>		4. [usage](#usage-3)
+<br>		5. [license](#license-4)
+<br>		6. [contributor](#contributor-5)
+<br>		7. [tests](#tests-6)
+<br>		8. [furtherQA](#furtherQA-7)
+<br>		9. [gitProfileName](#gitProfileName-8)
+<br>		10. [enterEmail](#enterEmail-9)
 <br>
    
    ##  Iescription <a name="instalation-2"></a>
