@@ -1,9 +1,9 @@
 
   
-  #  Auto generate README.md file from console.   <a name="title-0"></a>
+  #  Auto generate README.md file from console.  <a name="title-0"></a>
   ##  Description <a name="description-1"></a>
      
-When we developers work on any given project, we sure do spend lot of time working about what to write and how to layout the structure of our readme.md file. Well this app created to ease that struggle and save developer/your precious time. With that in mind, this app take you through series of questions which you fill in the readme.md file gets generated in your root-folder automatically. I hope you find this app useful. See installation guide section to get you started. Good luck! 
+When we developers work on any given project, we sure do spend lot of time working about what to write and how to layout the structure of our readme.md file. Well this app created to ease that struggle and save developer/your precious time. With that in mind, this app take you through series of questions which you fill in the readme.md file gets generated in your root-folder automatically. I hope you find this app useful. See installation guide section to get you started. Good luck!
 
     ## Table of Contents
 <br>		1. [title](#title-0)
@@ -18,11 +18,11 @@ When we developers work on any given project, we sure do spend lot of time worki
 <br>		10. [enterEmail](#enterEmail-9)
 <br>
    
-   ##  Iescription <a name="instalation-2"></a>
+   ##  Instalation <a name="instalation-2"></a>
       
 To run this app, make sure you have node installed on your machine then go to you project root folder then run: 1. npm init, 2. Install inquirer, fs, and axios.  
 
-   ##  Unstalation<a name="usage-3"></a>
+   ##  Usage<a name="usage-3"></a>
       
 When the app is run, you get series of questions related tot he project. You fill the section which then gets processed and then the application generates readme.md file which then can be pushed to your live git repo. 
 
