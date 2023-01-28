@@ -37,7 +37,8 @@ const promtQuestions = () => {
         {
             type: 'input',
             name: 'contributor',
-            message: 'Contributor intructions?'
+            message: 'Contributor intructions?',
+            default: "If you would like to contribute to this project, please get in touch on"
         },
         {
             type: 'input',
@@ -47,7 +48,8 @@ const promtQuestions = () => {
         {
             type: 'input',
             name: 'furtherQA',
-            message: 'Any further questions ?'
+            message: 'Any further questions ?',
+            default: "If you have any further question, please get in touch on:"
         },
         {
             type: 'input',

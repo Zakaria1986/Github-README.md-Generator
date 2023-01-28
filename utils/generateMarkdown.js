@@ -39,16 +39,16 @@ function generateMarkdown(data, questions, tableCont) {
       \n${icon}
 
    ##  ${questions[5].name.charAt(0).toUpperCase() + questions[5].name.slice(1)} <a name="contributor-5"></a>
-      \n${data[5].contributor} [Get in touch](mailto:${data[9].enterEmail}
+      \n${data[5].contributor} ![email](mailto:${data[9].enterEmail})
 
    ##  ${questions[6].name.charAt(0).toUpperCase() + questions[6].name.slice(1)} <a name="tests-6"></a>
       \n${data[6].tests}
 
    ##  ${questions[7].name.charAt(0).toUpperCase() + questions[7].name.slice(1)} <a name="frutherQA-7"></a>
-      \n${data[7].furtherQA} [Get in touch](mailto:${data[9].enterEmail}
+      \n${data[7].furtherQA} ![Get in touch](mailto:${data[9].enterEmail})
 
    ##  ${questions[8].name.charAt(0).toUpperCase() + questions[8].name.slice(1)} <a name="gitProfileName-8"></a>
-      \n[Click to see git repository](https://github.com/]${data[8].gitProfileName})
+      \n![Click to see git repository](https://github.com/]${data[8].gitProfileName})
    `
 
   return readmeContent;
