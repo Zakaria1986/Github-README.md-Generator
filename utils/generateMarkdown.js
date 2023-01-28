@@ -23,32 +23,32 @@ function generateMarkdown(data, questions, tableCont) {
 
   let readmeContent = `
   
-  #${data[0].title.charAt(0).toUpperCase() + data[0].title.slice(1)}  <a name="title-0"></a>
-  ##${questions[1].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="description-1"></a>
-    ${data[1].description}
-  
-  ${tableCont}
+  #  ${data[0].title.charAt(0).toUpperCase() + data[0].title.slice(1)}  <a name="title-0"></a>
+  ##  ${questions[1].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="description-1"></a>
+     \n${data[1].description}
+
+    ${tableCont}
    
-   ##${questions[2].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="instalation-2"></a>
-      ${data[2].instalation}
+   ##  ${questions[2].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="instalation-2"></a>
+      \n${data[2].instalation}
 
-   ##${questions[3].name.charAt(0).toUpperCase() + questions[2].name.slice(1)}<a name="usage-3"></a>
-      ${data[3].usage}
+   ##  ${questions[3].name.charAt(0).toUpperCase() + questions[2].name.slice(1)}<a name="usage-3"></a>
+      \n${data[3].usage}
 
-   ##${questions[4].name.charAt(0).toUpperCase() + questions[4].name.slice(1)} <a name="license-4"></a>
-      ${icon}
+   ##  ${questions[4].name.charAt(0).toUpperCase() + questions[4].name.slice(1)} <a name="license-4"></a>
+      \n${icon}
 
-   ##${questions[5].name.charAt(0).toUpperCase() + questions[5].name.slice(1)} <a name="contributor-5"></a>
-      ${data[5].contributor} [Get in touch](mailto:${data[9].enterEmail}
+   ##  ${questions[5].name.charAt(0).toUpperCase() + questions[5].name.slice(1)} <a name="contributor-5"></a>
+      \n${data[5].contributor} [Get in touch](mailto:${data[9].enterEmail}
 
-   ##${questions[6].name.charAt(0).toUpperCase() + questions[6].name.slice(1)} <a name="tests-6"></a>
-      ${data[6].tests}
+   ##  ${questions[6].name.charAt(0).toUpperCase() + questions[6].name.slice(1)} <a name="tests-6"></a>
+      \n${data[6].tests}
 
-   ##${questions[7].name.charAt(0).toUpperCase() + questions[7].name.slice(1)} <a name="frutherQA-7"></a>
-      ${data[7].furtherQA} [Get in touch](mailto:${data[9].enterEmail}
+   ##  ${questions[7].name.charAt(0).toUpperCase() + questions[7].name.slice(1)} <a name="frutherQA-7"></a>
+      \n${data[7].furtherQA} [Get in touch](mailto:${data[9].enterEmail}
 
-   ##${questions[8].name.charAt(0).toUpperCase() + questions[8].name.slice(1)} <a name="gitProfileName-8"></a>
-      [Click to see git repository](https://github.com/]${data[8].gitProfileName})
+   ##  ${questions[8].name.charAt(0).toUpperCase() + questions[8].name.slice(1)} <a name="gitProfileName-8"></a>
+      \n[Click to see git repository](https://github.com/]${data[8].gitProfileName})
    `
 
   return readmeContent;
