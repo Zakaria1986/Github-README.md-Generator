@@ -5,35 +5,44 @@
 
 const axios = require('axios');
 function getUserAccount(gitUserName) {
-  return axios.get('/user/12345');
+   return axios.get('/user/12345');
 }
 
-function generateMarkdown(data, questions, tableCont) {
+function generateMarkdown(data, questions) {
 
-  let icon;
-  if (data[4].license === "MIT") {
-    icon = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-  } else if (data[4].license === "ODbL") {
-    icon = `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)`
-  } else if (data[4].license === "PDDL") {
-    icon = `[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)`
-  } else if (data[4].license === "WTFPL") {
-    icon = `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`
-  }
+   let icon;
+   if (data[4].license === "MIT") {
+      icon = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+   } else if (data[4].license === "ODbL") {
+      icon = `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)`
+   } else if (data[4].license === "PDDL") {
+      icon = `[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)`
+   } else if (data[4].license === "WTFPL") {
+      icon = `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`
+   }
 
-  let readmeContent = `
+   let readmeContent = `
   
   #  ${data[0].title.charAt(0).toUpperCase() + data[0].title.slice(1)}  <a name="title-0"></a>
   ##  ${questions[1].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="description-1"></a>
      \n${data[1].description}
-
-    \n${tableCont}
+   
+   \n## Table of Contents\n
+     1. [Description](#description-1)
+     1. [Installation](#instalation-2)
+     2. [Usage info](#usage-3)
+     3. [License](#license-4)
+     4. [Contributors](#contributor-5)
+     5. [Tester info](#tests-6)
+     6. [Further Q&A](#frutherQA-7)
+     6. [GitHub Link](#gitProfileName-8)
    
    ##  ${questions[2].name.charAt(0).toUpperCase() + questions[2].name.slice(1)} <a name="instalation-2"></a>
       \n${data[2].instalation}
 
    ##  ${questions[3].name.charAt(0).toUpperCase() + questions[3].name.slice(1)}<a name="usage-3"></a>
       \n${data[3].usage}
+      \n[Walk through link:](${data[9].usage}}) 
 
    ##  ${questions[4].name.charAt(0).toUpperCase() + questions[4].name.slice(1)} <a name="license-4"></a>
       \n${icon}
@@ -51,7 +60,7 @@ function generateMarkdown(data, questions, tableCont) {
       \n[Click to see git repository](https://github.com/]${data[8].gitProfileName})
    `
 
-  return readmeContent;
+   return readmeContent;
 
 }
 

@@ -67,20 +67,29 @@ const promtQuestions = () => {
                 return validatedEmail;
             }
         }
+        ,
+        {
+            type: 'input',
+            name: 'gitDemoLink',
+            message: 'Please enter link to your walk throuhg of the project?'
+        }
     ];
 }
 
 //  * When a user clicks on the links in the **Table of Contents**  then they are taken to the corresponding section of the README
-const tableContent = (arr) => {
 
-    // let promtQuestsTableCont = promtQuestions();
+// No longer being as the table is now statically coded in. 
 
-    let cont = `## Table of Contents\n<br>`
-    for (var i = 0; i < arr.length; i++) {
-        cont += `\t\t${i + 1}. [${arr[i].name}](#${arr[i].name}-${i})\n<br>`;
-    }
-    return cont;
-}
+// const tableContent = (arr) => {
+
+//     // let promtQuestsTableCont = promtQuestions();
+
+//     let cont = `## Table of Contents\n<br>`
+//     for (var i = 0; i < arr.length; i++) {
+//         cont += `\t\t${i + 1}. [${arr[i].name}](#${arr[i].name}-${i})\n<br>`;
+//     }
+//     return cont;
+// }
 
 // const contOutPut = tableContent();
 // console.log(contOutPut);
@@ -90,7 +99,7 @@ async function inquirerFunc() {
 
 
     const promtQuests = await promtQuestions();
-    const tableConts = await tableContent(promtQuests);
+    // const tableConts = await tableContent(promtQuests);
 
     return inquirer
         .prompt(promtQuests)
@@ -129,16 +138,20 @@ async function inquirerFunc() {
                 {
                     enterEmail: answers.enterEmail,
                 }
+                ,
+                {
+                    enterEmail: answers.gitDemoLink,
+                }
             );
 
-            createReadMeFile(promtAnswers, promtQuests, tableConts)
+            createReadMeFile(promtAnswers, promtQuests)
         });
 }
 
 
-async function createReadMeFile(data, promtQuest, tableCont) {
+async function createReadMeFile(data, promtQuest) {
 
-    let genrateFucReturn = generateMarkdown(data, promtQuest, tableCont);
+    let genrateFucReturn = generateMarkdown(data, promtQuest);
 
     console.log(genrateFucReturn);
 
