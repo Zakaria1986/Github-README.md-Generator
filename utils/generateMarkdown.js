@@ -27,15 +27,15 @@ function generateMarkdown(data, questions) {
   ##  ${questions[1].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="description-1"></a>
      \n${data[1].description}
    
-   \n## Table of Contents\n
-     1. [Description](#description-1)
-     1. [Installation](#instalation-2)
-     2. [Usage info](#usage-3)
-     3. [License](#license-4)
-     4. [Contributors](#contributor-5)
-     5. [Tester info](#tests-6)
-     6. [Further Q&A](#frutherQA-7)
-     6. [GitHub Link](#gitProfileName-8)
+   c\n## Table of Contents\n
+   \n1. [Description](#description-1)
+   \n2. [Installation](#instalation-2)
+   \n3. [Usage info](#usage-3)
+   \n4. [License](#license-4)
+   \n5. [Contributors](#contributor-5)
+   \n6. [Tester info](#tests-6)
+   \n7. [Further Q&A](#frutherQA-7)
+   \n8. [GitHub Link](#gitProfileName-8)
    
    ##  ${questions[2].name.charAt(0).toUpperCase() + questions[2].name.slice(1)} <a name="instalation-2"></a>
       \n${data[2].instalation}
