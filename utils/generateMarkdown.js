@@ -54,10 +54,10 @@ function generateMarkdown(data, questions) {
       \n${data[6].tests}
 
    ##  ${questions[7].name.charAt(0).toUpperCase() + questions[7].name.slice(1)} <a name="frutherQA-7"></a>
-      \n${data[7].furtherQA} [email](mailto:${data[9].enterEmail})
+      \n${data[7].furtherQA} [email](${data[9].enterEmail})
 
    ##  ${questions[8].name.charAt(0).toUpperCase() + questions[8].name.slice(1)} <a name="gitProfileName-8"></a>
-      \n[Click to see git repository](https://github.com/]${data[8].gitProfileName})
+      \n[Click to see git repository](https://github.com/${data[8].gitProfileName}])
    `
 
    return readmeContent;
