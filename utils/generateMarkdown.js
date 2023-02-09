@@ -42,7 +42,7 @@ function generateMarkdown(data, questions) {
 
    ##  ${questions[3].name.charAt(0).toUpperCase() + questions[3].name.slice(1)}<a name="usage-3"></a>
       \n${data[3].usage}
-      \n[Walk through link:](${data[9].usage}) 
+      \n[Walk through link:](${data[9].gitDemoLink}) 
 
    ##  ${questions[4].name.charAt(0).toUpperCase() + questions[4].name.slice(1)} <a name="license-4"></a>
       \n${icon}
