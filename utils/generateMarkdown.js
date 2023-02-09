@@ -27,7 +27,7 @@ function generateMarkdown(data, questions) {
   ##  ${questions[1].name.charAt(0).toUpperCase() + questions[1].name.slice(1)} <a name="description-1"></a>
      \n${data[1].description}
    
-   c\n## Table of Contents\n
+   \n## Table of Contents\n
    \n1. [Description](#description-1)
    \n2. [Installation](#instalation-2)
    \n3. [Usage info](#usage-3)
