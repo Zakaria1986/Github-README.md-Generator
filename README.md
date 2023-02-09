@@ -41,7 +41,7 @@ When the app is run, you get series of questions related tot he project. You fil
 
       
 
-[Walk through link:](https://www.youtube.com/watch?v=hx_b2SmEK1U) 
+[Walk through link:](https://youtu.be/-WqAWRtnMFY) 
 
    ##  License <a name="license-4"></a>
 
