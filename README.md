@@ -61,13 +61,13 @@ If you would like to contribute to this project, please get in touch on [email](
 
 If you would like to test and contribute to this app, please download a copy of the repo and let me know the bug or anythings. Thank you!
 
-   ##  FurtherQA <a name="frutherQA-7"></a>
+   ##  FurtherQA <a id="frutherQA-7"></a>
 
       
 
 If you have any further question, please get in touch on: [email](zakaria.khan@zaksweb.co.uk)
 
-   ##  GitProfileName <a name="gitProfileName-8"></a>
+   ##  GitProfileName <a id="gitProfileName-8"></a>
 
       
 
