@@ -23,9 +23,9 @@ When we developers work on any given project, we sure do spend lot of time worki
    
 6. [Tester info](#tests-6)
    
-7. [Further Q&A](#frutherQA-7)
+7. [Further Q&A](#FurtherQA)
    
-8. [GitHub Link](#gitProfileName-8)
+8. [GitHub Link](#GitProfileName)
    
    ##  Instalation <a name="instalation-2"></a>
 
@@ -61,13 +61,13 @@ If you would like to contribute to this project, please get in touch on [email](
 
 If you would like to test and contribute to this app, please download a copy of the repo and let me know the bug or anythings. Thank you!
 
-   ##  FurtherQA <a id="frutherQA-7"></a>
+   ##  FurtherQA <a id="FurtherQA"></a>
 
       
 
 If you have any further question, please get in touch on: [email](zakaria.khan@zaksweb.co.uk)
 
-   ##  GitProfileName <a id="gitProfileName-8"></a>
+   ##  GitProfileName <a name="GitProfileName"></a>
 
       
 
