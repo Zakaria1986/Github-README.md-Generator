@@ -27,7 +27,7 @@ When we developers work on any given project, we sure do spend lot of time worki
    
 8. [GitHub Link](#GitProfileName)
    
-   ##  Instalation <a name="instalation-2"></a>
+   ## Instalation <a name="instalation-2"></a>
 
       
 
