@@ -61,13 +61,13 @@ If you would like to contribute to this project, please get in touch on [email](
 
 If you would like to test and contribute to this app, please download a copy of the repo and let me know the bug or anythings. Thank you!
 
-   ##  FurtherQA <a id="FurtherQA"></a>
+   ##  Further Q&A <a name="FurtherQA"></a>
 
       
 
 If you have any further question, please get in touch on: [email](zakaria.khan@zaksweb.co.uk)
 
-   ##  GitProfileName <a name="GitProfileName"></a>
+   ##  Git Profile Name <a name="GitProfileName"></a>
 
       
 
